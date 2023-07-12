@@ -7,8 +7,8 @@ book:
   author: "KJ"
 #  cover-image: images/cover.png
 #  site-url: https://kanthjs.github.io/plantpathologyTH/
-#  repo-url: https://github.com/kanthjs/plantpathologyTH/
-#  repo-branch: master
+  repo-url: https://github.com/kanthjs/plantpathologyTH/
+  repo-branch: master
   repo-actions: [edit]
   sharing: [twitter, facebook, linkedin]
   chapters:
@@ -37,4 +37,4 @@ format:
     - custom.scss
     cover-image: cover.png
     code-link: true
-    mainfont: Noto Sans Thai
+    mainfont: K2D

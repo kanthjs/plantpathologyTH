@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Plant Pathology in Thai - 8&nbsp; S3</title>
+<title>Plant Pathology in Thai - 6&nbsp; S3</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -17,9 +17,10 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
@@ -46,43 +47,13 @@ pre.numberSource code > span > a:first-child::before
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
     padding: 0 4px; width: 4em;
-    color: #aaaaaa;
   }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
 div.sourceCode
   {   }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -93,7 +64,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./loops.html" rel="next">
+<link href="./a1-starting.html" rel="next">
 <link href="./programs.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -131,11 +102,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-    <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">S3</span></h1>
-      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
-        <i class="bi bi-chevron-right"></i>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./slots.html">Project 3: Slot Machine</a></li><li class="breadcrumb-item"><a href="./s3.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">S3</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
       </button>
     </div>
   </nav>
@@ -143,163 +119,144 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Plant Pathology in Thai</a> 
         <div class="sidebar-tools-main">
-    <a href="" title="Share" id="sidebar-tool-dropdown-0" class="sidebar-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-share"></i></a>
-    <ul class="dropdown-menu" aria-labelledby="sidebar-tool-dropdown-0">
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-            <i class="bi bi-bi-twitter pe-1"></i>
-          Twitter
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
-            <i class="bi bi-bi-facebook pe-1"></i>
-          Facebook
-          </a>
-        </li>
-        <li>
-          <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-            <i class="bi bi-bi-linkedin pe-1"></i>
-          LinkedIn
-          </a>
-        </li>
-    </ul>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
 </div>
     </div>
       </div>
-      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
         </div>
-      </div>
+        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">Welcome</a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./preface.html" class="sidebar-item-text sidebar-link">Preface</a>
+  <a href="./preface.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">คำนำ</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./dice.html" class="sidebar-item-text sidebar-link">ตอนที่ 1: Weighted Dice</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a href="./dice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ตอนที่ 1: Weighted Dice</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./basics.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Very Basics</span></a>
+  <a href="./basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The Very Basics</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./packages.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Packages and Help Pages</span></a>
+  <a href="./packages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Packages and Help Pages</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./cards.html" class="sidebar-item-text sidebar-link">Project 2: Playing Cards</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+            <a href="./cards.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project 2: Playing Cards</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./objects.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">R Objects</span></a>
+  <a href="./objects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">R Objects</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./notation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">R Notation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./modifying.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Modifying Values</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./environments.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Environments</span></a>
+  <a href="./notation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">R Notation</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./slots.html" class="sidebar-item-text sidebar-link">Project 3: Slot Machine</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a href="./slots.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Project 3: Slot Machine</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./programs.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Programs</span></a>
+  <a href="./programs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Programs</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./s3.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">S3</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./loops.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Loops</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./speed.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Speed</span></a>
+  <a href="./s3.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">S3</span></span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Appendices</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a1-starting.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Installing R and RStudio</span></a>
+  <a href="./a1-starting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Installing R and RStudio</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./a2-packages.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">R Packages</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./a3-updating.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">C</span>&nbsp; <span class="chapter-title">Updating R and Its Packages</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./a4-data.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">D</span>&nbsp; <span class="chapter-title">Loading and Saving Data in R</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./a5-debug.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">E</span>&nbsp; <span class="chapter-title">Debugging R Code</span></a>
+  <a href="./a2-packages.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">R Packages</span></span></a>
   </div>
 </li>
       </ul>
@@ -307,23 +264,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </ul>
     </div>
 </nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-s3-system" id="toc-the-s3-system" class="nav-link active" data-scroll-target="#the-s3-system"><span class="toc-section-number">8.1</span>  The S3 System</a></li>
-  <li><a href="#attributes" id="toc-attributes" class="nav-link" data-scroll-target="#attributes"><span class="toc-section-number">8.2</span>  Attributes</a></li>
-  <li><a href="#generic-functions" id="toc-generic-functions" class="nav-link" data-scroll-target="#generic-functions"><span class="toc-section-number">8.3</span>  Generic Functions</a></li>
-  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="toc-section-number">8.4</span>  Methods</a>
+  <li><a href="#the-s3-system" id="toc-the-s3-system" class="nav-link active" data-scroll-target="#the-s3-system"><span class="header-section-number">6.1</span> The S3 System</a></li>
+  <li><a href="#attributes" id="toc-attributes" class="nav-link" data-scroll-target="#attributes"><span class="header-section-number">6.2</span> Attributes</a></li>
+  <li><a href="#generic-functions" id="toc-generic-functions" class="nav-link" data-scroll-target="#generic-functions"><span class="header-section-number">6.3</span> Generic Functions</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><span class="header-section-number">6.4</span> Methods</a>
   <ul class="collapse">
-  <li><a href="#method-dispatch" id="toc-method-dispatch" class="nav-link" data-scroll-target="#method-dispatch"><span class="toc-section-number">8.4.1</span>  Method Dispatch</a></li>
+  <li><a href="#method-dispatch" id="toc-method-dispatch" class="nav-link" data-scroll-target="#method-dispatch"><span class="header-section-number">6.4.1</span> Method Dispatch</a></li>
   </ul></li>
-  <li><a href="#classes" id="toc-classes" class="nav-link" data-scroll-target="#classes"><span class="toc-section-number">8.5</span>  Classes</a></li>
-  <li><a href="#s3-and-debugging" id="toc-s3-and-debugging" class="nav-link" data-scroll-target="#s3-and-debugging"><span class="toc-section-number">8.6</span>  S3 and Debugging</a></li>
-  <li><a href="#s4-and-r5" id="toc-s4-and-r5" class="nav-link" data-scroll-target="#s4-and-r5"><span class="toc-section-number">8.7</span>  S4 and R5</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="toc-section-number">8.8</span>  Summary</a></li>
+  <li><a href="#classes" id="toc-classes" class="nav-link" data-scroll-target="#classes"><span class="header-section-number">6.5</span> Classes</a></li>
+  <li><a href="#s3-and-debugging" id="toc-s3-and-debugging" class="nav-link" data-scroll-target="#s3-and-debugging"><span class="header-section-number">6.6</span> S3 and Debugging</a></li>
+  <li><a href="#s4-and-r5" id="toc-s4-and-r5" class="nav-link" data-scroll-target="#s4-and-r5"><span class="header-section-number">6.7</span> S4 and R5</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">6.8</span> Summary</a></li>
   </ul>
 </nav>
     </div>
@@ -332,7 +290,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="sec-s3" class="quarto-section-identifier d-none d-lg-block"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">S3</span></span></h1>
+<h1 class="title"><span id="sec-s3" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">S3</span></span></h1>
 </div>
 
 
@@ -362,8 +320,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>one_play</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="do">## 0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You can fix both of these problems with R’s S3 system.</p>
-<section id="the-s3-system" class="level2" data-number="8.1">
-<h2 data-number="8.1" class="anchored" data-anchor-id="the-s3-system"><span class="header-section-number">8.1</span> The S3 System</h2>
+<section id="the-s3-system" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="the-s3-system"><span class="header-section-number">6.1</span> The S3 System</h2>
 <p>S3 refers to a class system built into R. The system governs how R handles objects of different classes. Certain R functions will look up an object’s S3 class, and then behave differently in response.</p>
 <p>The <code>print</code> function is like this. When you print a numeric vector, <code>print</code> will display a number:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>num <span class="ot">&lt;-</span> <span class="dv">1000000000</span></span>
@@ -376,8 +334,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>If you use objects with classes—and you do—you will run into R’s S3 system. S3 behavior can seem odd at first, but is easy to predict once you are familiar with it.</p>
 <p>R’s S3 system is built around three components: attributes (especially the <code>class</code> attribute), generic functions, and methods.</p>
 </section>
-<section id="attributes" class="level2" data-number="8.2">
-<h2 data-number="8.2" class="anchored" data-anchor-id="attributes"><span class="header-section-number">8.2</span> Attributes</h2>
+<section id="attributes" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="attributes"><span class="header-section-number">6.2</span> Attributes</h2>
 <p>In <a href="objects.html#sec-attributes">Attributes</a>, you learned that many R objects come with attributes, pieces of extra information that are given a name and appended to the object. Attributes do not affect the values of the object, but stick to the object as a type of metadata that R can use to handle the object. For example, a data frame stores its row and column names as attributes. Data frames also store their class, <code>"data.frame"</code>, as an attribute.</p>
 <p>You can see an object’s attributes with <code>attribute</code>. If you run <code>attribute</code> on the <code>deck</code> data frame that you created in <a href="cards.html">Project 2: Playing Cards</a>, you will see:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">attributes</span>(deck)</span>
@@ -444,12 +402,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="do">##  1</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="do">## attr(,"symbols")</span></span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="do">##  "B" "0" "B"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise: Add an Attribute
 </div>
 </div>
@@ -542,8 +500,8 @@ Exercise: Add an Attribute
 <span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a><span class="do">## $0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This method of cleaning the output requires you to manually intervene in your R session (to call <code>slot_display</code>). There is a function that you can use to automatically clean up the output of <code>play</code> <em>each</em> time it is displayed. This function is <code>print</code>, and it is a <em>generic function</em>.</p>
 </section>
-<section id="generic-functions" class="level2" data-number="8.3">
-<h2 data-number="8.3" class="anchored" data-anchor-id="generic-functions"><span class="header-section-number">8.3</span> Generic Functions</h2>
+<section id="generic-functions" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="generic-functions"><span class="header-section-number">6.3</span> Generic Functions</h2>
 <p>R uses <code>print</code> more often than you may think; R calls <code>print</code> each time it displays a result in your console window. This call happens in the background, so you do not notice it; but the call explains how output makes it to the console window (recall that <code>print</code> always prints its argument in the console window). This <code>print</code> call also explains why the output of <code>print</code> always matches what you see when you display an object at the command line:</p>
 <div class="sourceCode" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(pi)</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="do">## 3.141593</span></span>
@@ -591,8 +549,8 @@ Exercise: Add an Attribute
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="do">## "2001-09-08 19:46:40 CST"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Take a look at the code inside <code>print</code> to see how it does this. You may imagine that print looks up the class attribute of its input and then uses an +if+ tree to pick which output to display. If this occurred to you, great job! <code>print</code> does something very similar, but much more simple.</p>
 </section>
-<section id="methods" class="level2" data-number="8.4">
-<h2 data-number="8.4" class="anchored" data-anchor-id="methods"><span class="header-section-number">8.4</span> Methods</h2>
+<section id="methods" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="methods"><span class="header-section-number">6.4</span> Methods</h2>
 <p>When you call <code>print</code>, <code>print</code> calls a special function, <code>UseMethod</code>:</p>
 <div class="sourceCode" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>print</span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="do">## function (x, ...) </span></span>
@@ -649,8 +607,8 @@ Exercise: Add an Attribute
 <span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="do">##   Nonvisible functions are asterisked</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>This system of generic functions, methods, and class-based dispatch is known as S3 because it originated in the third version of S, the programming language that would evolve into S-PLUS and R. Many common R functions are S3 generics that work with a set of class methods. For example, <code>summary</code> and <code>head</code> also call <code>UseMethod</code>. More basic functions, like <code>c</code>, <code>+</code>, <code>-</code>, <code>&lt;</code> and others also behave like generic functions, although they call <code>.primitive</code> instead of <code>UseMethod</code>.</p>
 <p>The S3 system allows R functions to behave in different ways for different classes. You can use S3 to format your slot output. First, give your output its own class. Then write a print method for that class. To do this efficiently, you will need to know a little about how <code>UseMethod</code> selects a method function to use.</p>
-<section id="method-dispatch" class="level3" data-number="8.4.1">
-<h3 data-number="8.4.1" class="anchored" data-anchor-id="method-dispatch"><span class="header-section-number">8.4.1</span> Method Dispatch</h3>
+<section id="method-dispatch" class="level3" data-number="6.4.1">
+<h3 data-number="6.4.1" class="anchored" data-anchor-id="method-dispatch"><span class="header-section-number">6.4.1</span> Method Dispatch</h3>
 <p><code>UseMethod</code> uses a very simple system to match methods to functions.</p>
 <p>Every S3 method has a two-part name. The first part of the name will refer to the function that the method works with. The second part will refer to the class. These two parts will be separated by a period. So for example, the print method that works with functions will be called <code>print.function</code>. The summary method that works with matrices will be called <code>summary.matrix</code>. And so on.</p>
 <p>When <code>UseMethod</code> needs to call a method, it searches for an R function with the correct S3-style name. The function does not have to be special in any way; it just needs to have the correct name.</p>
@@ -680,12 +638,12 @@ Exercise: Add an Attribute
 <p><code>UseMethod</code> will first look for a method that matches the first class listed in the object’s class vector. If <code>UseMethod</code> cannot find one, it will then look for the method that matches the second class (and so on if there are more classes in an object’s class vector).</p>
 <p>If you give <code>print</code> an object whose class or classes do not have a print method, <code>UseMethod</code> will call <code>print.default</code>, a special method written to handle general cases.</p>
 <p>Let’s use this system to write a better print method for the slot machine output.</p>
-<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise: Make a Print Method
 </div>
 </div>
@@ -703,12 +661,12 @@ Exercise: Make a Print Method
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="do">## B 0 B</span></span>
 <span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="do">## $0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Let’s ensure that every piece of slot machine output has the <code>slots</code> class.</p>
-<div class="callout callout callout-style-simple no-icon callout-captioned">
+<div class="callout callout-style-simple callout-none no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
-<div class="callout-caption-container flex-fill">
+<div class="callout-title-container flex-fill">
 Exercise: Add a Class
 </div>
 </div>
@@ -738,8 +696,8 @@ Exercise: Add a Class
 <span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a><span class="do">## $0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 </section>
-<section id="classes" class="level2" data-number="8.5">
-<h2 data-number="8.5" class="anchored" data-anchor-id="classes"><span class="header-section-number">8.5</span> Classes</h2>
+<section id="classes" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="classes"><span class="header-section-number">6.5</span> Classes</h2>
 <p>You can use the S3 system to make a robust new class of objects in R. Then R will treat objects of your class in a consistent, sensible manner. To make a class:</p>
 <ul>
 <li>Choose a name for your class.</li>
@@ -786,19 +744,19 @@ Exercise: Add a Class
 <p>You can avoid this behavior by writing a <code>c.slots</code> method and a <code>[.slots</code> method, but then difficulties will quickly accrue. How would you combine the <code>symbols</code> attributes of multiple plays into a vector of symbols attributes? How would you change <code>print.slots</code> to handle vectors of outputs? These challenges are open for you to explore. However, you will usually not have to attempt this type of large-scale programming as a data scientist.</p>
 <p>In our case, it is very handy to let <code>slots</code> objects revert to single prize values when we combine groups of them together into a vector.</p>
 </section>
-<section id="s3-and-debugging" class="level2" data-number="8.6">
-<h2 data-number="8.6" class="anchored" data-anchor-id="s3-and-debugging"><span class="header-section-number">8.6</span> S3 and Debugging</h2>
+<section id="s3-and-debugging" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="s3-and-debugging"><span class="header-section-number">6.6</span> S3 and Debugging</h2>
 <p>S3 can be annoying if you are trying to understand R functions. It is difficult to tell what a function does if its code body contains a call to <code>UseMethod</code>. Now that you know that <code>UseMethod</code> calls a class-specific method, you can search for and examine the method directly. It will be a function whose name follows the <code>&lt;function.class&gt;</code> syntax, or possibly <code>&lt;function.default&gt;</code>. You can also use the <code>methods</code> function to see what methods are associated with a function or a class.</p>
 </section>
-<section id="s4-and-r5" class="level2" data-number="8.7">
-<h2 data-number="8.7" class="anchored" data-anchor-id="s4-and-r5"><span class="header-section-number">8.7</span> S4 and R5</h2>
+<section id="s4-and-r5" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="s4-and-r5"><span class="header-section-number">6.7</span> S4 and R5</h2>
 <p>R also contains two other systems that create class specific behavior. These are known as S4 and R5 (or reference classes). Each of these systems is much harder to use than S3, and perhaps as a consequence, more rare. However, they offer safeguards that S3 does not. If you’d like to learn more about these systems, including how to write and use your own generic functions, I recommend the book <a href="http://adv-r.had.co.nz/">Advanced R Programming</a> by Hadley Wickham.</p>
 </section>
-<section id="summary" class="level2" data-number="8.8">
-<h2 data-number="8.8" class="anchored" data-anchor-id="summary"><span class="header-section-number">8.8</span> Summary</h2>
+<section id="summary" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.8</span> Summary</h2>
 <p>Values are not the only place to store information in R, and functions are not the only way to create unique behavior. You can also do both of these things with R’s S3 system. The S3 system provides a simple way to create object-specific behavior in R. In other words, it is R’s version of object-oriented programming (OOP). The system is implemented by generic functions. These functions examine the class attribute of their input and call a class-specific method to generate output. Many S3 methods will look for and use additional information that is stored in an object’s attributes. Many common R functions are S3 generics.</p>
 <p>R’s S3 system is more helpful for the tasks of computer science than the tasks of data science, but understanding S3 can help you troubleshoot your work in R as a data scientist.</p>
-<p>You now know quite a bit about how to write R code that performs custom tasks, but how could you repeat these tasks? As a data scientist, you will often repeat tasks, sometimes thousands or even millions of times. Why? Because repetition lets you simulate results and estimate probabilities. <a href="loops.html">Loops</a> will show you how to automate repetition with R’s <code>for</code> and <code>while</code> functions. You’ll use <code>for</code> to simulate various slot machine plays and to calculate the payout rate of your slot machine.</p>
+<p>You now know quite a bit about how to write R code that performs custom tasks, but how could you repeat these tasks? As a data scientist, you will often repeat tasks, sometimes thousands or even millions of times. Why? Because repetition lets you simulate results and estimate probabilities. <a href="#sec-loops">Loops</a> will show you how to automate repetition with R’s <code>for</code> and <code>while</code> functions. You’ll use <code>for</code> to simulate various slot machine plays and to calculate the payout rate of your slot machine.</p>
 
 
 </section>
@@ -831,9 +789,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -898,6 +870,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -940,12 +998,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./programs.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Programs</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Programs</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./loops.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Loops</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./a1-starting.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Installing R and RStudio</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
