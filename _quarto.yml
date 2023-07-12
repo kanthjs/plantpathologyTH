@@ -1,0 +1,40 @@
+project:
+  type: book
+  output-dir: docs
+  
+book:
+  title: "Plant Pathology in Thai"
+  author: "KJ"
+#  cover-image: images/cover.png
+#  site-url: https://kanthjs.github.io/plantpathologyTH/
+#  repo-url: https://github.com/kanthjs/plantpathologyTH/
+#  repo-branch: master
+  repo-actions: [edit]
+  sharing: [twitter, facebook, linkedin]
+  chapters:
+    - index.qmd
+    - preface.qmd
+    - part: dice.qmd
+      chapters: 
+        - basics.qmd
+        - packages.qmd
+    - part: cards.qmd
+      chapters:
+        - objects.qmd
+        - notation.qmd
+    - part: slots.qmd
+      chapters:
+        - programs.qmd
+        - s3.qmd
+  appendices:
+    - a1-starting.qmd
+    - a2-packages.qmd
+
+format:
+  html: 
+    theme: 
+    - cosmo
+    - custom.scss
+    cover-image: cover.png
+    code-link: true
+    mainfont: Noto Sans Thai
