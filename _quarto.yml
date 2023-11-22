@@ -1,40 +1,85 @@
 project:
   type: book
   output-dir: docs
-  
+execute:
+  cache: true
+  freeze: auto
 book:
-  title: "Plant Pathology in Thai"
-  author: "KJ"
+#  favicon:
+#  google-analytics: ""
+  title: "ระบาดวิทยาโรคพืช"
+#  subtitle: 
+  publisher: "KJ"
 #  cover-image: images/cover.png
 #  site-url: https://kanthjs.github.io/plantpathologyTH/
   repo-url: https://github.com/kanthjs/plantpathologyTH/
   repo-branch: master
   repo-actions: [edit]
   sharing: [twitter, facebook, linkedin]
+  page-footer: 
+    border: false
+    background: light
+    left: | 
+      R4PDE@TH - R for Plant Disease Epidemiology is written by Emerson Del Ponte
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+
   chapters:
     - index.qmd
-    - preface.qmd
-    - part: dice.qmd
-      chapters: 
-        - basics.qmd
-        - packages.qmd
-    - part: cards.qmd
+    - cite.qmd
+    - author.qmd
+    - acknowledgements.qmd
+    - intro.qmd
+    - part: "Epidemic data"
       chapters:
-        - objects.qmd
-        - notation.qmd
-    - part: slots.qmd
-      chapters:
-        - programs.qmd
-        - s3.qmd
-  appendices:
-    - a1-starting.qmd
-    - a2-packages.qmd
+        - data-terminology.qmd
+ #       - data-ordinal.qmd
+ #       - data-actual-severity.qmd
+ #       - data-accuracy.qmd
+ #       - data-sads.qmd
+ #       - data-training.qmd      
+ #   - part: "Temporal analysis"
+ #     chapters: 
+ #       - temporal-dpc.qmd
+ #       - temporal-models.qmd
+ #       - temporal-fitting.qmd
+ #   - part: "Spatial analysis"
+ #     chapters:
+ #       - spatial-gradients.qmd
+ #       - spatial-models.qmd
+ #       - spatial-fitting.qmd
+ #       - spatial-patterns.qmd
+ #       - spatial-tests.qmd
+ #   - part: "Epidemics and yield"
+ #     chapters:
+ #       - yieldloss-concepts.qmd
+ #       - yieldloss-regression-models.qmd
+ #   - part: "Disease prediction"
+ #     chapters: 
+ #       - warning-systems.qmd
+ #   - references.qmd
 
+bibliography: references.bib
+csl: phytopathology.csl
+prefer-html: true
 format:
-  html: 
+  html:
+    toc: true
+    toc-depth: 5
     theme: 
-    - cosmo
-    - custom.scss
-    cover-image: cover.png
-    code-link: true
+      light: 
+        - flatly
+        - r4pd.scss
+        #- custom.scss
+      dark: 
+        - darkly
+#    cover-image:cover.png
     mainfont: K2D
+#  epub:
+#    epub-cover-image: cover.png
+#    toc: true
+#  docx:
+#    reference-doc: custom-reference.docx
+#    toc: true
+#    number-sections: true
+#    highlight-style: github

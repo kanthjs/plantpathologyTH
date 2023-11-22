@@ -1,0 +1,11 @@
+## How to cite {.unnumbered}
+
+The author has opted for self-publishing this book to ensure its accessibility and updatability, reflecting the dynamic nature of the field and the R programming environment. Readers are encouraged to cite this work when referencing or utilizing the methodologies and insights provided in the book. Ensure the accuracy of the details while citing, especially the URL, to direct readers to the correct online source.
+
+Below one suggestion of citation style:
+
+> Del Ponte, E. M. (2023). *R for Plant Disease Epidemiology (R4PDE)*. Author. [https://r4pde.net](https://r4pde.net/)
+
+Cataloguing-in-Publication data prepared by the library of the Federal University of Viçosa, Brazil.
+
+![](imgs/ficha_cip.png){width="555"}

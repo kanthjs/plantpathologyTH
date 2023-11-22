@@ -1,0 +1,197 @@
+---
+title: "Fitting gradient models"
+---
+
+::: {.callout-note appearance="simple"}
+This is a work in progress that is currently undergoing heavy technical editing and copy-editing
+:::
+
+```{r message=FALSE, warning=FALSE}
+#| message: false
+#| warning: false
+library(tidyverse)
+library(r4pde)
+theme_set(theme_r4pde(font_size = 16)) # set global theme
+```
+
+## Dataset
+
+The hypothetical data describe the gradient curve for the number of lesions counted at varying distances (in meters) from the source. Let's create two vectors, one for the distances $x$ and the other for the lesion count $Y$, and then a data frame by combining the two vectors.
+
+```{r}
+# create the two vectors
+x <- c(0.8, 1.6, 2.4, 3.2, 4, 7.2, 12, 15.2, 21.6, 28.8)
+Y <- c(184.9, 113.3, 113.3, 64.1, 25, 8, 4.3, 2.5, 1, 0.8)
+grad1 <- data.frame(x, Y) # create the dataframe
+knitr::kable(grad1) # show the gradient
+```
+
+## Visualize the gradient curve
+
+The gradient can be visualized using `ggplot` function.
+
+```{r}
+#| label: fig-fit_grad1
+#| fig-cap: "Hypothetical gradient of lesion count over distances from the inoculum source" 
+grad1 |> 
+  ggplot(aes(x, Y))+
+  theme_r4pde(font_size = 16)+
+  geom_point(size = 2)+
+  geom_line()+
+  labs(y = "Lesion count",
+       x = "Distance (m)")
+```
+
+## Linear regression
+
+One method to determine the best-fitting model for gradient data is through linear regression. Depending on the chosen model, the transformed $Y$ variable is regressed against the distance (which could be either in its original form or transformed). By doing this, we can derive the model's parameters and evaluate its fit using various statistics. Two primary ways to appraise the model's fit are by visually inspecting the regression line and examining the coefficient of determination (often denoted as $R^2$ ). Now, let's proceed to fit each of the three models discussed in the previous chapter.
+
+### Exponential model
+
+In this model, the log of $Y$ is taken and regressed against the (untransformed) distance from the focus. Let's fit the model and examine the summary output of model fit.
+
+```{r}
+reg_exp <- lm(log(Y) ~ x, data = grad1)
+jtools::summ(reg_exp)
+```
+
+The intercept $a$ represents the natural logarithm (log) of the response variable when the predictor is at a distance of zero. The negative slope $-b$ indicates the rate at which the response decreases as the predictor increases --- this is the decline rate of the gradient. The adjusted R-squared value of 0.86 suggests that approximately 86% of the variability in the response variable can be explained by the predictor in the model. While this seems to indicate a good fit, it is essential to compare this coefficient with those from other models to determine its relative goodness of fit. Furthermore, visually inspecting a regression plot is crucial. By doing this, we can check for any patterns or residuals around the predicted line, which can provide insights into the model's assumptions and potential areas of improvement
+
+```{r}
+#| label: fig-fit_grad2
+#| fig-cap: "Fit of the exponential model to the log of lesion count over distances from the inoculum source" 
+grad1 |> 
+  ggplot(aes(x, log(Y)))+
+  theme_r4pde(font_size = 16)+
+  geom_point(size = 2)+
+  geom_line()+
+  geom_abline(slope = coef(reg_exp)[[2]], intercept = coef(reg_exp)[[1]],
+              linewidth = 1, linetype = 2)+
+ labs(y = "Log of Lesion count",
+       x = "Distance (m)")
+
+```
+
+From the aforementioned plot, it's evident that the exponential model might not be the optimal choice. This inference is drawn from the noticeable patterns or residuals surrounding the regression fit line, suggesting that the model may not capture all the underlying structures in the data.
+
+### Power law model
+
+For the power law model, we employ a log-log transformation: the natural logarithm (log) of $Y$ is regressed against the log of $X$. Following this transformation, we apply the regression procedure to determine the model's parameters. Additionally, we extract the relevant statistics to evaluate the model's fit to the data
+
+```{r}
+reg_p <- lm(log(Y) ~ log(x), data = grad1)
+jtools::summ(reg_p)
+```
+
+The plot presented below underscores the superiority of the power law model in comparison to the exponential model. One of the key indicators of this superior fit is the higher coefficient of determination, $R^2$ for the power law model. A higher $R^2$ value suggests that the model can explain a greater proportion of the variance in the dependent variable, making it a better fit for the data at hand.
+
+```{r}
+#| label: fig-fit_grad3
+#| fig-cap: "Fit of the power law model to the log of lesion count over log of the distance from the inoculum source" 
+grad1 |> 
+  ggplot(aes(log(x), log(Y)))+
+  theme_r4pde(font_size = 16)+
+  geom_point(size = 2)+
+  geom_line()+
+  geom_abline(slope = coef(reg_p)[[2]], intercept = coef(reg_p)[[1]],
+              linewidth = 1, linetype = 2)+
+ labs(y = "Log of Lesion count",
+       x = "Log of distance")
+
+```
+
+### Modified power law model
+
+In the modified power model, a constant is added to $x$.
+
+```{r}
+reg_pm <- lm(log(Y) ~ log(x + 0.4), data = grad1)
+jtools::summ(reg_pm)
+```
+
+```{r}
+#| label: fig-fit_grad4
+#| fig-cap: "Fit of the modified power law model to the log of lesion count over log + 0.4 of the distances from the inoculum source" 
+grad1 |> 
+  ggplot(aes(log(x+0.4), log(Y)))+
+  theme_r4pde(font_size = 16)+
+  geom_point(size = 2)+
+  geom_line()+
+  geom_abline(slope = coef(reg_pm)[[2]], intercept = coef(reg_pm)[[1]],
+              linewidth = 1, linetype = 2)+
+ labs(y = "Log of Lesion count",
+       x = "Log of distance + 0.4 (m)")
+
+```
+
+Among the models tested, the modified power law emerges as the most suitable choice based on its highest coefficient of determination, $R^2$ . This conclusion is not only supported by the statistical metrics but also visibly evident when we examine the graphs of the fitted models.To further illustrate this, we'll generate a gradient plot. On this plot, we'll overlay the data with the best-fitting model --- the modified power law. Remember, to accurately represent the data, we'll need to back-transform the parameter $a$ before plotting.
+
+```{r}
+grad1 |> 
+  ggplot(aes(x, Y))+
+  theme_r4pde(font_size = 16)+
+  geom_point(size = 2)+
+  geom_line()+
+  stat_function(fun = function(x) intercept = exp(coef(reg_pm)[[1]]) * ((x + 0.4)^coef(reg_pm)[[2]]), linetype = 2) +
+  labs(y = "Lesion count",
+       x = "Distance (m)")
+
+```
+## fit_gradients
+
+
+The `fit_gradients()` function of the {r4pde} package is designed to take in a dataset consisting of two variables: distance (x) and some measure of the phenomenon (Y). Using this data, the function fits each of the three models and evaluates their performance by calculating the R-squared value for each fit. The higher the R-squared value, the better that particular model explains the variation in the data. Once the models are fit, the function returns a series of outputs:
+
+- A table that summarizes the parameters and fit statistics of each model.
+- Diagnostic plots that show how well each model fits the data in its transformed space.
+- Plots that juxtapose the original, untransformed data against the fits from each of the three models.
+
+A notable feature is the addition of a constant (C) that can be adjusted in the modified power model. This provides flexibility in tweaking the model to better fit the data if necessary. By providing a comparative analysis of three gradient models, it enables users to quickly identify which model best represents the spatial patterns in their data.
+
+Here is how to use the function with our `grad1` dataset. Then we show the table and two plots as outputs.
+
+
+```{r}
+#| warning: false
+#| message: false
+library(r4pde)
+theme_set(theme_r4pde(font_size = 16))
+
+fit1 <- fit_gradients(grad1, C = 0.4)
+
+knitr::kable(fit1$results_table) # display the table with coefficients and stats
+
+library(patchwork) # to place plots side by side
+(fit1$plot_power  |
+  fit1$plot_power_original)+
+  labs(title = "")
+
+```
+
+Each plot can be further customized for publication purposes.
+
+```{r}
+ fit1$plot_power_original +
+  labs(x = "Distance from the focus (m)",
+       y = "Lesion count",
+       title = "")
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
