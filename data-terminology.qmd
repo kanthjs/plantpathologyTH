@@ -1,46 +1,51 @@
 # Disease variables
 
 ## Disease quantification
+การศึกษาการระบาดในเชิงเวลาหรือการกระจายเชิงพื้นที่จะไม่สามารถทำได้ ถ้าไม่มีการเก็บหรือรวบรวมข้อมูลภาคสนาม หรือ ข้อมูลจำลอง (simulated data) ในบางกรณี การศึกษา plant disease quantification ที่เรียกว่า Phytopathometry เป็นส่วนหนึ่งของการศึกษาโรคพืชวิทยา มีความเกี่ยวข้องอย่างมากกับระบาดวิทยาโรคพืช [@bock2021]
 
-Studies on the temporal progression or spatial spread of epidemics cannot be conducted without field-collected data, or, in some cases, simulated data. The study of plant disease quantification, termed Phytopathometry, is a subdivision of plant pathology concerned with the science of disease measurement. It has strong ties to the field of epidemiology [@bock2021].
+โดยทั่ว ๆ ไป การหาปริมาณโรคจะดำเนินการผ่านการประเมินด้วยภาพ แต่หลัง ๆ  ในช่วงสองสามทศวรรษที่ผ่านมา ความก้าวหน้าด้านการถ่ายภาพ (image) และเทคโนโลยีการรับรู้ระยะไกล (remote sensing) (ซึ่งไม่จำเป็นต้องสัมผัสกับวัตถุ) ทำให้การหาวิธีการหาปริมาณโรคนั้นเปลี่ยนไป ด้วยเหตุนี้ ปริมาณโรคจึงสามารถวัดด้วย การประมาณ (estimate) (ด้วยตา) หรือการวัด (ผ่านเทคโนโลยีสำรวจข้อมูลระยะไกล เช่น RGB, MSI และ HSI) [@fig-disease_measure]
 
-Traditionally, disease quantification has been executed through visual evaluation. However, the past few decades have witnessed significant advancements in imaging and remote sensing technologies (which don't necessitate contact with the object), leaving a profound impact on this field. As such, disease quantity can now be gauged through estimation (visually, by the human eye) or measurement (through remote sensing technologies such as RGB, MSI, and HSI) [@fig-disease_measure].
-
-While the utilization of digital or remote sensing technology for disease measurement or estimation provides a more objective approach, visual assessment is largely subjective. It is known to vary among human raters, as these raters differ in their innate abilities, training, and how they are influenced by the chosen method (e.g., scales). Disease is estimated or measured on a specimen within a population, or on a sample of specimens drawn from that population. The specimen in question can be a plant organ, an individual plant, a group of plants, a field, or a farm. The specific specimen type also determines the terminology used to describe disease quantity.
+แม้ว่าการใช้เทคโนโลยีสำรวจข้อมูลระยะไกลจะมีความเป็น แต่ ผลการประเมินปริมาณโรคด้วยภาพจะขึ้นอยู่กับแต่ละบุคคล คือผู้ประเมินที่เป็นมนุษย์นั้น แตกต่างกันไป ตามความสามารถ ประสบการณ์ ความชำนาญ อีกทั้งจากวิธีการ หรือ เครื่องมือที่เลือก โรคถูกประเมินหรือวัดจากตัวอย่างภายในประชากร หรือจากตัวอย่างของตัวอย่างที่ดึงมาจากประชากรนั้น ตัวอย่างอาจเป็นชิ้นส่วนหนึ่ง ส่วนใดของพืช ต้นหนึ่งต้น กลุ่มของพืช พื้นที่ปลูก หรือฟาร์ม ประเภทของตัวอย่าง เป็นตัวกำหนดเพื่อใช้อธิบายปริมาณของโรคด้วย
 
 ![Different approaches used to obtain estimates or measures of plant disease. RGB = red, green, blue; MSI = multispectral imaging; HSI = hyperspectral imaging.](imgs/disease_measure.png){#fig-disease_measure style="margin: 10px" fig-align="center" width="490"}
 
-inally, while developing new or refining existing disease assessment methods, it is crucial to evaluate the reliability of the assessments made by different raters or instruments, as well as their accuracy---specifically, how close the estimations or measurements are to the reference (or gold standard) values. Several methods are available for assessing the reliability, precision, and accuracy of these estimates or measurements (see [definitions](data-accuracy.html)). The choice of methods depends on the objective of the work, but largely on the type or nature of the data. These considerations will be further discussed.
+ในขณะที่พัฒนาวิธีใหม่ ๆ เพื่อประเมินโรคใหม่หรือปรับปรุงวิธีที่มีอยู่ การประเมินความน่าเชื่อถือของการประเมินที่ทำโดยผู้ประเมินหรือเครื่องมือต่าง ๆ เป็นสิ่งสำคัญ ตลอดจนความถูกต้องแม่นยำ โดยเฉพาะเจาะจงว่าการประมาณหรือการวัดใกล้เคียงกับข้อมูลอ้างอิงเพียงใด (gold standard) มีหลายวิธีในการประเมินความน่าเชื่อถือ ความแม่นยำ และความแม่นยำของการประมาณการหรือการวัดเหล่านี้ (ดู [definition](data-accuracy.html)) การเลือกวิธีการขึ้นอยู่กับวัตถุประสงค์ของงาน แต่ส่วนใหญ่ขึ้นอยู่กับประเภทหรือลักษณะของข้อมูล 
 
 ## Disease variables
+คําทั่วไปที่ใช้อ้างอิงถึงปริมาณของโรค ไม่ว่าจะแสดงออกมาอย่างไร คือ "ความรุนแรงของโรค (disease intensity)" อย่างไรก็ตาม คํานี้มีคุณค่าในทางปฏิบัติค่อนข้างน้อย เพราะเพียงแค่บ่งชี้ในนัยว่าโรคมี "ความรุนแรง" มากน้อยเพียงใด เราจึงต้องการศัพท์เฉพาะเจาะจงมากขึ้น เพื่อสร้างมาตรฐานในการอ้างอิงถึงปริมาณและลักษณะของโรค งานหลักประการหนึ่งในการประเมินโรค คือ การจําแนกตัวอย่างแต่ละชิ้นว่า  เป็นโรคหรือไม่เป็นโรค การประเมินแบบไบนารี (ใช่/ไม่ใช่ หรือ 1/0) อาจสื่อถึงความรุนแรงของโรคได้เพียงพอ หากต้องการยืนยันเพียงจํานวนหรือสัดส่วนของตัวอย่างที่เป็นโรคในกลุ่มตัวอย่างหรือประชากร
 
-A common term used to reference the quantity of disease, irrespective of how it is expressed, is 'disease intensity'. This term, however, has minimal practical value as it only implies that the disease is more or less "intense". We require more specific terminology to standardize the reference to disease quantity and methodology. One of the primary tasks in disease assessment is classifying each specimen, often in a sample or within a population, as diseased or not diseased. This binary (yes/no or 1/0) evaluation may sufficiently express disease intensity if the goal is to ascertain the number or proportion of diseased specimens in a sample or a population.
-
-This discussion brings us to two terms: disease incidence and prevalence. Incidence is typically used to denote the proportion or number (count) of plants (or their organs) deemed as observational units at the field scale or below. On the other hand, prevalence refers to the proportion or number of fields or farms with diseased plants within a larger production area or region [@nutter2006] @fig-prevalence_incidence. Therefore, prevalence is analogous to incidence, with the only difference being the spatial scale of the sampling unit.
+การสนทนานี้นำเราไปสู่คำศัพท์สองคำ: *การเกิดโรค (Incidence)* และ *ความชุกของโรค (prevalence)* 
+การเกิดโรค ใช้เพื่อแสดงสัดส่วนหรือจำนวน (จำนวนนับ) ของต้นพืช (ส่วนของพืช) ที่ถือเป็นหน่วยสังเกตการณ์ในระดับสนาม (field scale) หรือต่ำกว่า ในทางกลับกัน ความชุกของโรค หมายถึงสัดส่วนหรือจำนวนแปลงหรือฟาร์มที่มีพืชเป็นโรคภายในพื้นที่ปลูกหรือภูมิภาคขนาดใหญ่ [@nutter2006] @fig-prevalence_incidence ดังนั้น ความชุกของโรค จึงคล้ายคลึงกับการเกิดโรค โดยมีความแตกต่างเพียงอย่างเดียวคือขนาดเชิงพื้นที่ของหน่วยสุ่มตัวอย่าง (sampling unit)
 
 ![Schematic representation of how prevalence and incidence of plant diseases are calculated depending on the spatial scale of the assessment](imgs/prevalence_incidence.png){#fig-prevalence_incidence style="margin: 15px" fig-align="center" width="480"}
+
+ในหลายกรณี จำเป็นต้องกำหนดระดับของตัวอย่างโรค ซึ่งเป็นแนวคิดที่กำหนดความรุนแรงของโรค ในบางบริบท ความรุนแรงถูกกำหนดไว้อย่างแคบๆ ตามสัดส่วนของหน่วยที่แสดงอาการ [@nutter2006] อย่างไรก็ตาม มุมมองความรุนแรงที่กว้างกว่านั้นรวมถึงตัวชี้วัดเพิ่มเติม เช่น คะแนนที่ระบุหรือลำดับ จำนวนรอยโรค และเปอร์เซ็นต์พื้นที่ที่ได้รับผลกระทบ (มาตราส่วนอัตราส่วน) ระดับลำดับจะแบ่งออกเป็นคลาสตามลำดับ (ดู [ส่วน](data-ordinal.html) เฉพาะ) ซึ่งกำหนดตามระดับเปอร์เซ็นต์หรือคำอธิบายอาการ [@bock2021] ในบางครั้ง โรคจะแสดงออกมาเป็นขนาดหรือพื้นที่ของรอยโรค (เฉลี่ย) ซึ่งอาจถือได้ว่าเป็นตัวชี้วัดความรุนแรง ตัวแปรเหล่านี้แสดงถึงระดับต่างๆ ของการวัดที่ให้ข้อมูลในระดับที่แตกต่างกันเกี่ยวกับปริมาณของโรค ตั้งแต่ระดับต่ำ (ระดับที่กำหนด) ไปจนถึงระดับสูง (ระดับอัตราส่วน) [@fig-severity]
+
+ในหลายกรณี จําเป็นต้องระบุระดับความรุนแรงของอาการของตัวอย่างโรค ซึ่งเป็นแนวคิดที่นิยามระดับความรุนแรงของโรค ในบางบริบท ความรุนแรงอาจนิยามอย่างง่ายเพียงแค่สัดส่วนของหน่วยที่แสดงอาการ [@nutter2006] อย่างไรก็ตาม มุมมองความรุนแรงที่กว้างกว่านั้นรวมถึงตัวชี้วัดเพิ่มเติม เช่น คะแนนหรือระดับที่กําหนด จํานวนรอยโรค และร้อยละของพื้นที่ที่ได้รับผลกระทบ
+
+ระดับความรุนแรงมักจัดกลุ่มเป็นชั้นตามลําดับ โดยนิยามตามร้อยละหรือคําอธิบายอาการ บางครั้งอาจวัดเป็นขนาดหรือพื้นที่เฉลี่ยของรอยโรค ซึ่งถือเป็นตัวชี้วัดความรุนแรงด้วย ตัวแปรเหล่านี้ให้ข้อมูลเกี่ยวกับปริมาณโรคในระดับต่าง ๆ
 
 In many instances, it's necessary to determine the degree to which a specimen is diseased, a concept defined as disease severity. In certain contexts, severity is narrowly defined as the proportion of the unit that exhibits symptoms [@nutter2006]. However, a more expansive view of severity includes additional metrics such as nominal or ordinal scores, lesion count, and percent area affected (ratio scale). Ordinal scales are broken down into rank-ordered classes (see specific [section](data-ordinal.html)), defined based on either a percentage scale or descriptions of symptoms [@bock2021]. Occasionally, disease is expressed in terms of (average) lesion size or area, which could be regarded as a measure of severity. These variables represent different levels of measurements that provide varying degrees of information about the disease quantity - from low (nominal scale) to high (ratio scale) [@fig-severity].
 
 ![Scales and associated levels of measurement used to describe severity of plant diseases](imgs/severity.png){#fig-severity fig-align="center" style="margin: 15px" width="511"}
 
 ## Data types
+ข้อมูลที่ใช้ในการแสดงว่าโรคเป็นอุบัติการณ์หรือการวัดความรุนแรงในรูปแบบใดๆ อาจไม่ต่อเนื่องอ (discrete) หรือต่อเนื่องกัน (continuous) 
 
-The data used to express disease as incidence or any form of severity measurements can be discrete or continuous in nature.
+ตัวแปรแยกสามารถนับได้ (ค่าเป็นจํานวนเต็ม) ณ จุดใดจุดหนึ่งในช่วงเวลาหนึ่ง กล่าวคือ มีเพียงจํานวนจํากัดของค่าที่เป็นไปได้ (ค่าน้อยหรือเป็นลําดับ) และค่าเหล่านี้ไม่สามารถแบ่งย่อยได้ ยกตัวอย่างเช่น พืชหรือส่วนของพืชสามารถเป็นโรคหรือไม่เป็นโรคได้เท่านั้น ไม่สามารถนับพืชป่วยได้ 1.5 ต้น  นอกจากนี้ พืชที่จําแนกเป็นโรคอาจแสดงจํานวนรอยโรค (ข้อมูลการนับ) หรือถูกจัดระดับความรุนแรงที่ระบุ (ข้อมูลลําดับ) ข้อมูลโรคในรูปแบบการนับมักเกี่ยวข้องกับจํานวนการติดเชื้อต่อหน่วยตัวอย่าง ซึ่งหมายถึงจํานวนประชากรเชื้อโรคที่ได้รับการประเมิน
 
-Discrete variables are countable (involving integers) at a particular point in time. In other words, only a finite number of values (nominal or ordinal) is possible, and these cannot be subdivided. For instance, a plant or plant part can be either diseased or not diseased (nominal data). It's not possible to count 1.5 diseased plants. Furthermore, a plant classified as diseased may exhibit a certain number of lesions (count data), or be categorized into a specific severity class (ordinal data, common in ordinal scales, e.g., 1-9). Disease data in the form of counts often relates to the number of infections per sampling units. Most commonly, these counts refer to the assessed pathogen population, such as the number of airborne or soilborne propagules.
+ในทางตรงกันข้ามกับตัวแปรไม่ต่อเนื่อง ตัวแปรต่อเนื่องสามารถวัดได้บนสเกล และสามารถใช้ค่าใดก็ได้ระหว่างจุดใดจุดหนึ่ง เช่น ขนาดของรอยโรคบนต้นไม้ สามารถวัดได้อย่างแม่นยําเป็น ซม. หรือ มม. การประมาณความรุนแรงในร้อยละของพื้นที่ที่ป่วย ก็สามารถใช้ค่าใดก็ได้ระหว่าง 0 ถึง 100%   แม้ว่าข้อมูลรายบุคคลจะไม่ต่อเนื่อง แต่ในระดับตัวอย่าง สามารถถือได้ว่าความชุกเป็นแบบต่อเนื่อง เพราะสามารถคิดเป็นสัดส่วนหรือเปอร์เซ็นต์ได้ 
 
-In contrast to discrete variables, continuous variables can be measured on a scale and can assume any numeric value between two points. For example, the size of a lesion on a plant can be measured at a very precise scale (cm or mm). An estimate of severity on a percent scale (% diseased area) can take any value between non-zero and 100%. Although incidence at the individual level is discrete, at the sample level it can be treated as continuous, as it can assume any value in proportion or percentage.
-
-Disease variables can also be characterized by a statistical distribution, which are models that provide the probability of a specific value (or a range of values) being drawn from a particular distribution. Understanding statistical or mathematical distributions is a crucial step in improving our grasp of data collection methods, experiment design, and data analysis processes such as data summarization or hypothesis testing.
+ตัวแปรโรคยังสามารถแสดงลักษณะเฉพาะได้จากการใช้การแจกแจงทางสถิติ ซึ่งเป็นแบบจําลองที่ให้ความน่าจะเป็นว่าค่าหรือช่วงของค่าจะถูกดึงมาจากการแจกแจงที่กําหนด  ความเข้าใจในการแจกแจงทางสถิติหรือทางคณิตศาสตร์เหล่านี้ จึงเป็นขั้นตอนสําคัญในการปรับปรุงวิธีการเก็บข้อมูล การออกแบบการทดลอง และกระบวนการวิเคราะห์ข้อมูล เช่น การสรุปข้อมูลหรือการทดสอบสมมติฐาน
 
 ## Statistical distributions and simulation
 
 ### Binomial distribution
+สำหรับอุบัติการณ์ (และความชุก) ข้อมูลจะเป็นไบนารี่ในระดับบุคคล เนื่องจาก *การทดลอง (trial)* มีผลลัพธ์ที่เป็นไปได้เพียงสองประการ: พืชหรือส่วนของพืชเป็นโรคหรือไม่เป็นโรค การแจกแจงทางสถิติที่อธิบายข้อมูลอุบัติการณ์ในแต่ละระดับได้ดีที่สุดคือ *การแจกแจงแบบทวินาม (binomial distribution)*
 
 For incidence (and prevalence), the data is binary at the individual level, as there are only two possible outcomes in a *trial*: the plant or plant part is disease or not diseased. The statistical distribution that best describe the incidence data at the individual level is the *binomial distribution*.
 
-Let's simulate the binomial outcomes for a range of probabilities in a sample of 100 units, using the `rbinom()` function in R. For a single trial (e.g., status of plants in a single plant row), the `size` argument is set to 1.
+มาจำลองผลลัพธ์ทวินามสำหรับช่วงความน่าจะเป็นในกลุ่มตัวอย่าง 100 หน่วย โดยใช้ฟังก์ชัน `rbinom()` ใน R สำหรับการทดลองครั้งเดียว `size` ถูกตั้งค่าเป็น 1
 
 ```{r}
 #| warning: false
@@ -48,8 +53,7 @@ Let's simulate the binomial outcomes for a range of probabilities in a sample of
 library(tidyverse)
 library(r4pde)
 
-
-set.seed(123) # for reproducibility
+set.seed(987) # for reproducibility
 P.1 <- rbinom(100, size = 1, prob = 0.1)
 P.3 <- rbinom(100, size = 1, prob = 0.3)
 P.7 <- rbinom(100, size = 1, prob = 0.7)
@@ -57,7 +61,7 @@ P.9 <- rbinom(100, size = 1, prob = 0.9)
 binomial_data <- data.frame(P.1, P.3, P.7, P.9)
 ```
 
-We can then visualize the plots.
+สามารถแสดงออกมาเป็นกราฟได้
 
 ```{r}
 #| label: fig-binomial
@@ -73,13 +77,15 @@ binomial_data |>
 ```
 
 ### Beta distribution
+ในการศึกษาจำนวนมาก การแสดงปริมาณเหล่านี้เป็นสัดส่วนของประชากรทั้งหมดหรือขนาดตัวอย่างมักจะมีประโยชน์ แทนที่จะเป็นจำนวนสัมบูรณ์ ซึ่งช่วยสร้างมาตรฐานข้อมูล ทำให้ง่ายต่อการเปรียบเทียบระหว่างประชากรที่แตกต่างกันหรือช่วงเวลาที่แตกต่างกัน
 
-In many studies, it's often useful to express these quantities as a proportion of the total population or sample size, rather than absolute numbers. This helps standardize the data, making it easier to compare between different populations or different time periods.
+ตัวอย่างเช่น หากเรากำลังศึกษาโรคพืช เราสามารถแสดงอุบัติการณ์ของโรคเป็นสัดส่วนของพืชที่เป็นโรคใหม่ในช่วงเวลาที่กำหนด ในทำนองเดียวกัน ความรุนแรงของโรคสามารถแสดงเป็นสัดส่วนของพื้นที่อวัยวะของพืชแต่ละชนิดที่ได้รับผลกระทบจากโรค สัดส่วนเหล่านี้เป็นตัวแปรอัตราส่วน เนื่องจากสามารถรับค่าใดก็ได้ระหว่าง 0 ถึง 1 และอัตราส่วนของตัวแปรเหล่านี้ก็มีความหมาย
 
-For example, if we're studying a plant disease, we could express disease incidence as the proportion of plants that are newly diseased during a given time period. Similarly, disease severity could be expressed as the proportion of each plant's organ area that is affected by the disease. These proportions are ratio variables, as they can take on any value between 0 and 1, and ratios of these variables are meaningful.
+การแจกแจงแบบเบต้าคือการแจกแจงความน่าจะเป็นที่กำหนดไว้ระหว่าง 0 ถึง 1 ซึ่งทำให้เหมาะสำหรับการสร้างแบบจำลองข้อมูลที่แสดงถึงสัดส่วน เป็นการกระจายแบบยืดหยุ่น เนื่องจากรูปร่างสามารถมีได้หลายรูปแบบ ขึ้นอยู่กับค่าของพารามิเตอร์สองตัว ซึ่งมักแสดงเป็นอัลฟ่าและเบต้า
 
 The Beta distribution is a probability distribution that is defined between 0 and 1, which makes it ideal for modeling data that represents proportions. It's a flexible distribution, as its shape can take many forms depending on the values of its two parameters, often denoted as alpha and beta.
 
+ลองใช้ฟังก์ชัน `rbeta()`
 Let's simulate some data using the `rbeta()` function.
 
 ```{r}
@@ -88,6 +94,8 @@ beta5.5 <- rbeta(n = 1000, shape1 = 5, shape2 = 5)
 beta_data <- data.frame(beta1.5, beta5.5)
 
 ```
+
+โปรดสังเกตว่ามีพารามิเตอร์รูปร่างสองรายการในการแจกแจงแบบเบต้า: `shape1` และ `shape2` ที่จะกำหนด ทำให้การกระจายมีความยืดหยุ่นสูงและมีรูปร่างที่เป็นไปได้ที่แตกต่างกันดังที่เราเห็นด้านล่าง
 
 Notice that there are two shape parameters in the beta distribution: `shape1` and `shape2` to be defined. This makes the distribution very flexible and with different potential shapes as we can see below.
 
@@ -109,14 +117,23 @@ beta_data |>
 ```
 
 ### Beta-binomial distribution
+การแจกแจงแบบเบตา-ทวินามเป็นส่วนผสมของการแจกแจงแบบทวินามกับการแจกแจงแบบเบตาที่ทำหน้าที่เป็นพารามิเตอร์ความน่าจะเป็นก่อนหน้าของแบบทวินาม ความน่าจะเป็นของโรคอาจแตกต่างกันไปในแต่ละการทดลอง เนื่องมาจากปัจจัยหลายประการที่ตรวจไม่พบหรือตรวจวัดไม่ได้ ความแปรปรวนนี้อาจส่งผลให้เกิดการกระจายตัวมากเกินไป ซึ่งเป็นปรากฏการณ์ที่ความแปรปรวนที่สังเกตได้ในข้อมูลมากกว่าที่การแจกแจงแบบทวินามคาดไว้
 
 The Beta-Binomial distribution is a mixture of the Binomial distribution with the Beta distribution acting as a prior on the probability parameter of the binomial. Disease probabilities can vary across trials due to a number of unobserved or unmeasured factors. This variability can result in overdispersion, a phenomenon where the observed variance in the data is greater than what the binomial distribution expects.
 
+นี่คือจุดที่การแจกแจงแบบเบต้า-ทวินามมีประโยชน์ ด้วยการรวมความยืดหยุ่นของการแจกแจงแบบเบต้าในการสร้างแบบจำลองความน่าจะเป็นเข้ากับการสร้างแบบจำลองเหตุการณ์แบบไม่ต่อเนื่องของการแจกแจงแบบทวินาม ทำให้เกิดความแปรปรวนเพิ่มเติมอีกชั้นเพื่อพิจารณาการกระจายตัวมากเกินไป การแจกแจงแบบเบต้า-ทวินามถือว่าความน่าจะเป็นของความสำเร็จ (การเกิดโรคในบริบทนี้) เสมือนเป็นตัวแปรสุ่มตามการแจกแจงแบบเบต้า ซึ่งหมายความว่าความน่าจะเป็นอาจแตกต่างกันไปในแต่ละการทดลอง
+
 This is where the Beta-Binomial distribution comes in handy. By combining the Beta distribution's flexibility in modeling probabilities with the Binomial distribution's discrete event modeling, it provides an extra layer of variability to account for overdispersion. The Beta-Binomial distribution treats the probability of success (disease occurrence in this context) as a random variable itself, following a Beta distribution. This means the probability can vary from trial to trial.
+
+ดังนั้น เมื่อเราสังเกตข้อมูลที่แสดงความแปรปรวนมากกว่าการแจกแจงแบบเบต้าที่สามารถอธิบายได้ หรือเมื่อเราเชื่อว่ามีปัจจัยพื้นฐานที่ทำให้เกิดความแปรปรวนในความน่าจะเป็นในการเกิดโรค การแจกแจงแบบเบต้า-ทวินามจึงเป็นแบบจำลองที่เหมาะสมกว่า โดยรวบรวมทั้งความแปรปรวนในความน่าจะเป็นของความสำเร็จตลอดจนการเกิดขึ้นของเหตุการณ์ที่ไม่ต่อเนื่อง (อุบัติการณ์ของโรค)
 
 Therefore, when we observe data that shows more variance than the Beta distribution can account for, or when we believe there are underlying factors causing variability in the probability of disease occurrence, the Beta-Binomial distribution is a more appropriate model. It captures both the variability in success probability as well as the occurrence of the discrete event (disease incidence).
 
+เมื่อรวมกับการแจกแจงแบบทวินาม ซึ่งจัดการเหตุการณ์ที่ไม่ต่อเนื่องกัน (เช่น ไม่ว่าบุคคลนั้นจะเป็นโรคหรือไม่ก็ตาม) การแจกแจงแบบเบต้า-ทวินามจะทำให้เราสามารถคาดการณ์ความน่าจะเป็นเกี่ยวกับเหตุการณ์เหล่านี้ได้ ตัวอย่างเช่น จากข้อมูลก่อนหน้า (การแจกแจงแบบเบต้า) เราสามารถประมาณโอกาสที่บุคคลใดบุคคลหนึ่งจะเป็นโรคได้ (การแจกแจงแบบทวินาม)
+
 When combined with the Binomial distribution, which handles discrete events (e.g. whether an individual is diseased or not), the Beta-Binomial distribution allows us to make probabilistic predictions about these events. For example, based on prior data (the Beta distribution), we can estimate the likelihood of a particular individual being diseased (the Binomial distribution).
+
+ใน R ฟังก์ชัน `rBetaBin` ของแพ็คเกจ *FlexReg* จะสร้างค่าสุ่มจากการแจกแจงแบบเบต้าทวินาม อาร์กิวเมนต์ของฟังก์ชันคือ `n` หรือจำนวนค่าที่จะสร้าง ถ้า length(`n`) \> 1 ความยาวจะถือเป็นตัวเลขที่ต้องการ `ขนาด' คือจำนวนการทดลองทั้งหมด `mu` คือพารามิเตอร์เฉลี่ย มันจะต้องอยู่ใน (0, 1) `theta` คือพารามิเตอร์การกระจายตัวมากเกินไป มันจะต้องอยู่ใน (0, 1) `phi` พารามิเตอร์ความแม่นยำ เป็นอีกวิธีหนึ่งในการระบุพารามิเตอร์ทีต้า จะต้องเป็นค่าจริงที่เป็นบวก
 
 In R, the `rBetaBin` function of the *FlexReg* package generates random values from the beta-binomial distribution. The arguments of the function are `n`, or the number of values to generate; if length(`n`) \> 1, the length is taken to be the number required. `size` is he total number of trials. `mu` is the mean parameter. It must lie in (0, 1). `theta` is the overdispersion parameter. It must lie in (0, 1). `phi` the precision parameter. It is an alternative way to specify the theta parameter. It must be a positive real value.
 
@@ -144,11 +161,10 @@ betabin_data |>
   theme_r4pde()
 ```
 
-### Poisson distribution
+### การแจกแจงแบบปัวซง (Poisson distribution)
+การศึกษาด้านระบาดวิทยา โดยเฉพาะโรคพืช นักวิจัยมักจะรวบรวมข้อมูลเกี่ยวกับจํานวนพืช (ต้น) ที่เป็นโรค หรือ ส่วนของพืชที่ติดเชื้อ หรือแสดงอาการ เช่น จํานวนต้น จํานวนแผล ตัวแปรเหล่านี้ถูกนับเป็นจํานวนเต็ม เช่น 1, 2, 3 ซึ่งตัวแปรที่ไม่ต่อเนื่อง (discrete variable) ตัวแปรไม่ต่อเนื่องมีความแตกต่างจากตัวแปรต่อเนื่อง (continuous variable) ตรงที่ตัวแปรต่อเนื่องสามารถรับค่าใดก็ได้ภายในช่วงที่กําหนด และอาจรวมเศษส่วนหรือทศนิยมได้ นอกจากจะไม่ต่อเนื่องแล้ว ตัวแปรประเภทนี้ยังเป็นค่าลบไม่ได้อีกด้วย หมายความว่าไม่สามารถรับค่าติดลบ จํานวนพืชหรือแผลที่เป็นโรคย่อมไม่มีทางเป็นค่าลบได้ เมื่อพิจารณาลักษณะข้างต้นแล้ว การแจกแจงที่เหมาะสมในการจําลองข้อมูลประเภทนี้คือ การแจกแจงแบบปัวซอง (Poisson distribution) การกระจายนี้เหมาะอย่างยิ่งสําหรับการนับจํานวนครั้งที่เหตุการณ์เกิดขึ้นในช่วงเวลาหรือพื้นที่ที่กําหนด
 
-When conducting studies in epidemiology, specifically plant diseases, researchers often collect data on the number of diseased plants, infected plant parts, or individual symptoms, such as lesions. These variables are counted in whole numbers - 1, 2, 3, etc., making them discrete variables. Discrete variables contrast with continuous variables that can take any value within a defined range and can include fractions or decimals. In addition to being discrete, these variables are also non-negative, meaning they cannot take negative values. After all, you can't have a negative number of diseased plants or lesions. Given these characteristics, a suitable distribution to model such data is the Poisson distribution. This distribution is particularly suitable for counting the number of times an event occurs in a given time or space.
-
-In R, we can used the `rpois()` function to obtain 100 random observations following a Poisson distribution. For such, we need to inform the number of observation (n = 100) and `lambda`, the vector of means.
+ใน R สามารถใช้ฟังก์ชัน `rpois()` เพื่อรับค่าการสังเกตแบบสุ่ม 100 ครั้ง (`n = 100`) หลังจากการแจกแจงปัวซอง และ `lambda` ซึ่งเป็นเวกเตอร์ของค่าเฉลี่ย (vector of means)
 
 ```{r}
 poisson5 <- rpois(100, lambda = 10)
@@ -172,16 +188,21 @@ poisson_data |>
 
 ### Negative binomial distribution
 
-While the Poisson distribution is indeed suitable for modeling count data, it assumes that the mean and variance of the data are equal. However, in real-world scenarios, especially in epidemiology, it is common to encounter overdispersed data - where the variance is greater than the mean. This could occur, for instance, if there's greater variability in disease incidence across different plant populations than would be expected under the Poisson assumption.
+แม้ว่าการแจกแจงแบบปัวซองจะเหมาะสมกับข้อมูลการนับแบบจำลอง แต่จะถือว่าค่าเฉลี่ยและความแปรปรวนของข้อมูลเท่ากัน อย่างไรก็ตาม ในความเป็นจริง โดยเฉพาะอย่างยิ่งในด้านระบาดวิทยา เป็นเรื่องปกติที่จะพบกับข้อมูลที่กระจัดกระจายมากเกินไป โดยที่ความแปรปรวนมากกว่าค่าเฉลี่ย สิ่งนี้อาจเกิดขึ้นได้ เช่น หากมีความแปรปรวนในการเกิดโรค (disease incidence)ในประชากรพืชที่แตกต่างกันมากกว่าที่คาดไว้ภายใต้สมมติฐานปัวซอง (Poisson assumption)
+
+ในกรณีเช่นนี้ การแจกแจงแบบทวินามเชิงลบ (Negative Binomial Distribution) เป็นทางเลือกที่ดีกว่า การแจกแจงแบบทวินามเชิงลบเป็นการแจกแจงความน่าจะเป็นแบบไม่ต่อเนื่อง ซึ่งจําลองจํานวนครั้งของความสําเร็จตามลําดับการทดลองแบบเบอร์นุลลี่ที่เป็นอิสระและมีการแจกแจงแบบเดียวกัน ก่อนที่จะเกิดความล้มเหลวตามจํานวนที่ระบุไว้ (ไม่ใช่สุ่ม)
 
 In such cases, the Negative Binomial distribution is a better alternative. The Negative Binomial distribution is a discrete probability distribution that models the number of successes in a sequence of independent and identically distributed Bernoulli trials before a specified (non-random) number of failures occurs.
 
+คุณสมบัติหลักอย่างหนึ่งของการแจกแจงแบบทวินามเชิงลบคือ ความสามารถในการรับมือกับการกระจายตัวที่มากเกินไป โดยเปรียบเทียบกับการแจกแจงแบบปัวซอง ซึ่งมีเพียงพารามิเตอร์เดียว นั่นคือ แลมดา ซึ่งแสดงถึงค่าเฉลี่ยและความแปรปรวน การแจกแจงแบบทวินามเชิงลบนั้นจะมีพารามิเตอร์สองตัว โดยพารามิเตอร์หนึ่งคือค่าเฉลี่ย แต่อีกตัวหนึ่ง (มักแสดงเป็น "ขนาด" หรือ "รูปร่าง") จะควบคุมความแปรปรวนโดยอิสระ ทําให้ค่านั้นสามารถมีค่าสูงกว่าค่าเฉลี่ยได้หากจําเป็น ดังนั้นจึงให้ความยืดหยุ่นมากกว่าการแจกแจงแบบปัวซองสําหรับข้อมูลการนับแบบจําลอง และสามารถนําไปสู่ผลลัพธ์ที่แม่นยํามากขึ้นเมื่อมีการกระจายตัวที่มากเกินไป
+
 One of the key features of the Negative Binomial distribution is its ability to handle overdispersion. Unlike the Poisson distribution, which has one parameter (lambda, representing the mean and variance), the Negative Binomial distribution has two parameters. One parameter is the mean, but the other (often denoted as 'size' or 'shape') governs the variance independently, allowing it to be larger than the mean if necessary. Thus, it provides greater flexibility than the Poisson distribution for modeling count data and can lead to more accurate results when overdispersion is present.
+
+ใน R เราสามารถใช้ฟังก์ชัน `rnbinom()` เพื่อสร้างตัวแปรสุ่มจากการแจกแจงแบบทวินามเชิงลบ ฟังก์ชันนี้ต้องใช้จำนวนการสังเกต (`n`) เป้าหมายสำหรับจำนวนการทดลองที่ประสบความสำเร็จ (`ขนาด`) และความน่าจะเป็นของความสำเร็จแต่ละครั้ง (`ปัญหา`)
 
 In R, we can use the `rnbinom()` function to generate random variates from a Negative Binomial distribution. This function requires the number of observations (`n`), the target for the number of successful trials (`size`), and the probability of each success (`prob`).
 
-Here's an example:
-
+นี้คือตัวอย่าง
 
 ```{r}
 # Generate 100 random variables from a Negative Binomial distribution
@@ -203,17 +224,17 @@ negbin_data |>
   theme_r4pde()
 ```
 
-
-
 ### Gamma distribution
 
-In plant disease epidemiology and other fields of study, we may often encounter continuous variables - these are variables that can take on any value within a given range, including both whole numbers and fractions. An example of a continuous variable in this context is lesion size, which can theoretically be any non-negative value.
+ในสาขาระบาดวิทยาโรคพืช อาจพบตัวแปรต่อเนื่อง ซึ่งเป็นตัวแปรที่สามารถรับค่าใด ๆ ภายในช่วงที่กำหนด รวมทั้งจำนวนเต็มและเศษส่วน ทศนิยม ตัวอย่างของตัวแปรต่อเนื่องในบริบทนี้คือขนาดแผลของโรค ซึ่งในทางทฤษฎีอาจเป็นค่าใด ๆ ที่ไม่เป็นลบก็ได้
 
-Often, researchers use the normal (Gaussian) distribution to model such continuous variables. The normal distribution is symmetric, bell-shaped, and is fully described by its mean and standard deviation. However, a fundamental characteristic of the normal distribution is that it extends from negative infinity to positive infinity. While this is not a problem for many applications, it becomes an issue when the variable being modeled cannot take on negative values - like the size of a lesion.
+บ่อยครั้งที่นักวิจัยใช้การแจกแจงแบบปกติ (Gaussian) เพื่อสร้างแบบจำลองตัวแปรต่อเนื่อง ดังกล่าว การแจกแจงแบบปกติ แบบสมมาตร รูประฆังตว่ำ (bell-shaped) และอธิบายได้ด้วยค่าเฉลี่ยและส่วนเบี่ยงเบนมาตรฐาน (SD, standard deviation) อย่างไรก็ตาม ลักษณะพื้นฐานของการแจกแจงแบบปกติคือมันขยายจากค่า negative infinity ไปจนถึง positive infinity แม้ว่านี่จะไม่ใช่ปัญหาสำหรับหลาย ๆ แบบจำลอง แต่สำหรับตัวแปรที่จะใช้จำลองที่จะมีค่าลบไม่ได้ เช่น ตัวแปรขนาดแผลของโรค
 
-This is where the Gamma distribution can be a good alternative. The Gamma distribution is a two-parameter family of continuous probability distributions, which does not include negative values, making it an appropriate choice for modeling variables like lesion sizes. While it might seem a bit more complicated due to its two parameters, this also allows it a greater flexibility in terms of the variety of shapes and behaviors it can describe. The Gamma distribution is often used in various scientific disciplines, including queuing models, climatology, financial services, and of course, epidemiology. Its main parameters are the shape and scale (or alternatively shape and rate), which control the shape, spread and location of the distribution.
+การแจกแจงแกมมา (Gamma Distribution) เป็นทางเลือกที่ดี การแจกแจงแกมมาเป็นกลุ่มการแจกแจงความน่าจะเป็นแบบต่อเนื่อง ซึ่งมีพารามิเตอร์ 2 ตัว และไม่รวมค่าติดลบ จึงเหมาะสมสําหรับการสร้างแบบจําลองตัวแปร เช่น ขนาดแผลของโรค แม้จะมีความซับซ้อนมากกว่าการแจกแจงอื่นเล็กน้อย เพราะมีพารามิเตอร์ 2 ตัว แต่การแจกแจงแกมมาก็ช่วยให้มีความยืดหยุ่นในด้านรูปร่างและหน้าที่การทํางานที่หลากหลาย ซึ่งสามารถอธิบายได้ด้วยเหตุนี้ การแจกแจงแกมมาจึงนิยมใช้ในสาขาวิชาต่าง ๆ เช่น (queuing model) ภูมิอากาศวิทยา financial services รวมถึง ระบาดวิทยา โดยมีพารามิเตอร์หลัก คือ รูปร่างและขนาด (หรือรูปร่างและอัตรา) ซึ่งควบคุมการแพร่กระจายและตําแหน่งของการกระจาย
 
-We can use the `rgamma()` function that requires the number of samples (n = 100 in our case) and the `shape`, or the mean value.
+ไปดูตัวอย่างน่าจะทำให้เข้าใจมากขึ้น
+
+ใช้ฟังก์ชัน `rgamma()` ระบุจำนวนตัวอย่าง (n = 100) และ `shape` หรือค่าเฉลี่ย
 
 ```{r}
 gamma10 <- rgamma(n = 100, shape = 10, scale = 1)
@@ -237,10 +258,11 @@ gamma_data |>
 ```
 
 ### Simulating ordinal data
+ข้อมูลลำดับ (ordianl data) คือประเภทข้อมูลทางสถิติที่ประกอบด้วยคะแนนตัวเลขซึ่งจัดอยู่ในกลุ่มหมวดหมู่ต่าง ๆ ซึ่งเรียงลำดับอย่างมีความหมาย เช่น ข้อมูลจากการตอบแบบสำรวจ (เช่น ไม่เห็นด้วยอย่างยิ่ง ถึง เห็นด้วยอย่างยิ่ง) ระดับความประทีบใจ (เช่น แย่ ปานกลาง ดี ดีเยี่ยม) หรือในกรณีของโรคพืช ระดับความรุนแรงของโรค (เช่น 0 ถึง 5 โดยที่ 0 หมายถึง ไม่เป็นโรค และ 5 หมายถึง มีอาการของโรครุนแรง)
 
-Ordinal data is a statistical data type consisting of numerical scores that fall into a set of categories which are ordered in a meaningful way. This can include survey responses (e.g., strongly disagree to strongly agree), levels of achievement (e.g., poor, average, good, excellent), or, in the case of plant disease, disease severity scales (e.g., 0 to 5, where 0 represents a healthy plant and 5 represents a plant with severe symptoms).
+เมื่อวิเคราะห์กับข้อมูลลำดับ จะต้องตั้งสมมติฐานเกี่ยวกับการกระจายข้อมูล (distribution) แต่ ไม่เหมือนกับข้อมูลต่อเนื่อง (continuous data) ซึ่งอาจจำลองการแจกแจงแบบปกติหรือการแจกแจงแบบแกมม่า หรือข้อมูลนับซึ่งอาจจำลองการแจกแจงแบบปัวซง ข้อมูลลำดับจะไม่ต่อเนื่องและมีลำดับที่ชัดเจน แต่ระยะห่างระหว่างหมวดหมู่ต่าง ๆ ไม่จำเป็นต้องเท่ากัน ทำให้กระบวนการสร้างแบบจำลองแตกต่างออกไปเล็กน้อย
 
-When working with ordinal data, we often need to make assumptions about the distribution of the data. However, unlike continuous data which might be modeled by a normal or Gamma distribution, or count data which might be modeled by a Poisson distribution, ordinal data is discrete and has a clear order but the distances between the categories are not necessarily equal or known. This makes the modeling process slightly different.
+สามารถใช้ฟังก์ชัน `sample()` เพื่อสร้างค่า  และกำหนด probability แต่ละชุดได้ สร้าง 30 ค่า หน่วยด้วยคะแนนลำดับที่แตกต่างกันกันดีกว่า ในสถานการณ์แรก probability ที่สูงกว่า (0.5) คือสำหรับคะแนน 4 และ 5 และต่ำกว่า (0.1) สำหรับคะแนน 0 และ 1 และ ในสถานการณ์ที่สองคือกลับกัน
 
 We can use the `sample()` function and define the probability associated with each rank. Let's generate 30 units with a distinct ordinal score. In the first situation, the higher probabilities (0.5) are for scores 4 and 5 and lower (0.1) for scores 0 and 1, and in the second situation is the converse.
 
@@ -248,8 +270,6 @@ We can use the `sample()` function and define the probability associated with ea
 ordinal1 <- sample(0:5, 30, replace = TRUE, prob = c(0.1, 0.1, 0.2, 0.2, 0.5, 0.5))
 ordinal2 <- sample(0:5, 30, replace = TRUE, prob = c(0.5, 0.5, 0.2, 0.2, 0.1, 0.1))
 ordinal_data <- data.frame(ordinal1, ordinal2)
-
-
 ```
 
 ```{r}
