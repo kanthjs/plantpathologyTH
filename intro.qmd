@@ -1,40 +1,41 @@
 ---
-title: "Introduction"
+title: "คำนำ"
 editor: visual
 ---
 
-## Defining plant disease
+## โรคพืชคืออะไร 
+โรคพืช คือ *การทำงานผิดปกติของเซลล์และเนื้อเยื่อที่อาศัยซึ่งเป็นผลมาจากการระคายเคือง* ***อย่างต่อเนืื่อง*** *โดยสิ่งมีชีวิต(รวมถึงสัตว์ จุลินทรีย์ที่มองเห็นไม่เห็นด้วยตาเปล่่า)ก่อโรคหรือปัจจัยด้านสิ่งแวดล้อม และนำไปสู่การเกิดอาการผิดปกติเหล่านั้น* [@agrios2005d]
 
-Disease in plants can be defined as *any malfunctioning of host cells and tissues that results from continuous irritation by a pathogenic agent or environmental factor and leads to development of symptoms* [@agrios2005d]. When caused by pathogenic agent, the disease results from the combination of three elements: susceptible host plant, a virulent pathogen, and favorable environmental conditions - the famous disease triangle. When a pathogen population establishes and causes *disease* in a host population, the phenomenon is called an *epidemic*, or the disease in populations. Among several definitions of epidemic, a comprehensive one is the *change in disease intensity in a host population over time and space* [@madden2007].
+โรคเป็นผลมาจากสามองค์ประกอบร่วมกัน ที่เรียกกันว่า "สามเหลี่ยมโรคพืช" (disease triagle): พืชอาศัยที่อ่อนแอ (susceptible host) เชื้อโรคที่มีความรุนแรง(virulant pathogen) และสภาพแวดล้อมที่เอื้ออำนวย (favorable environment) - สามเหลี่ยมโรคที่มีชื่อเสียง เมื่อประชากรเชื้อโรคเกิดขึ้นและทำให้เกิด *โรค* เมื่อประชากรเชื้อโรคก่อตัวและทำให้เกิด *โรค* ในประชากรโฮสต์(ในที่นี้คือพืช)ปรากฏการณ์นี้เรียกว่า *โรคระบาด* หรือโรคในประชากร  หรือจะใหนิยาม ของโรคระบาด คำที่ครอบคลุมคือ *การเปลี่ยนแปลงความรุนแรงของโรค (disease intensity)ในประชากรโฮสต์ (host population)ในเชิงเวลาและระยะทาง (over time and space)* [@madden2007]
 
-There exist numerous iterations of the disease triangle, incorporating additional elements (e.g., human intervention and time) as points and/or dimensions to provide a more comprehensive representation of an epidemic [@agrios2005b]. We find the disease prism particularly illustrative, where a sequence of stacked triangles represent the evolution of a plant disease through time [@francl2001].
+หลักการสามเหลี่ยมโรคพืช ถูกหยิบยกมาใช้อธิบายและเป็นหลักการพื้นฐาน และนำมาขยายความกว้างออกไปมากขึ้น และผสมผสานองค์ประกอบอื่น ๆ เพิ่มเติม เช่น มนุษย์ (human activity )และ เวลา (time) เพื่อให้ครอบคลุมสาเหตุการระบาดของโรค มากขึ้น [@agrios2005b] ปริซึมของโรค(มีมากกว่า 3 องค์ประกอบ) แสดงให้เห็นความพิเศษ หน้าสามเหลี่ยมซ้อนกันแสดงถึงวิวัฒนาการของโรคพืชเมื่อเวลาผ่านไป [@francl2001].
 
 ![The plant disease prism as a model of plant disease epidemics](imgs/prism.png){#fig-prism fig-align="center" width="377"}
 
-## Importance of epidemics
+## ทำไมมันถึงสำคัญ
+โรคระบาดมีความสำคัญทางเศรษฐกิจอย่างมีนัยสำคัญเนื่องจากมีศักยภาพในการลดผลผลิตพืชผล ลดคุณภาพของผลิตภัณฑ์ และเพิ่มต้นทุนที่เกี่ยวข้องเกี่ยวกับการกำจัดและควบคุม ซึ่งขึ้นอยู่กับระดับความรุนแรงของโรคระบาด 
+ในประวัติศาสตร์ มีบันทึกมากมายเกี่ยวกับโรคระบาดของพืชที่รุนแรง ส่งผลให้เกิดเป็นภัยพิบัติต่อพืชผลและมนุษยชาติ อีกด้วย [@agrios2005b]. 
 
-Epidemics bear significant economic importance due to their potential to decrease crop yields, diminish product quality, and escalate control costs, contingent on their intensity level. Numerous historical examples of widespread epidemics, reaching pandemic levels and resulting in catastrophic effects on crops, have been documented [@agrios2005b]. The Irish potato famine of 1845--1847, caused by the late blight pathogen (*Phytophthora infestans*), is a famous example of a well-documented pandemic. This disease notably altered the course of history in Europe and the United States, and was pivotal in the evolution of the science of plant pathology. During the 1840s, the pathogen ravaged potato crops, which were a dietary staple for the Irish. The disease outbreak was triggered by the introduction of a novel, virulent pathogen population that found suitable environmental conditions (cool and wet weather) for infection and development within a dense population of susceptible hosts.
-
-However, there are several reasons why devastating epidemics may continue to unfold. Recent history has seen severe epidemics reaching pandemic levels due to the incursion of pathogens into regions where they had previously been absent (refer to Box 1). Alternatively, new pathogenic strains might emerge as a result of factors driving genetic diversity within the local pathogen population. A case in point is the Ug99 strain of the wheat stem rust, which poses a significant threat to global wheat production. First identified in Uganda in 1998, an asexual lineage has propagated through Africa and the Middle East, causing catastrophic epidemics. Research suggests that Ug99 emerged via somatic hybridization and nuclear exchange between isolates from different lineages [@li2019]. Finally, disease emergence or re-emergence can be influenced by shifts in climatic patterns. For instance, the Fusarium head blight of wheat caused by the fungus *Fusarium graminearum*. In Southern Brazil, the increased frequency of severe epidemics resulting in greater yield loss since the early 1990s has been linked to alterations in rainfall patterns across decades [@Duffeck2020].
+*Irish potato famine* (1845--1847) อ่าน[wiki](https://th.wikipedia.org/wiki/) เรื่อง ทุพภิกขภัยครั้งใหญ่ในไอร์แลนด์ โรค potato late blight ระบาดในมันฝรั่ง เกิดจากเชื้อราก่อโรคที่ชื่อว่า *Phytophthora infestans* เป็นเหตุการณ์การระบาดครั้งใหญ่ที่บันทึกไว้ และยังมีการเกิดโรคนี้ไว้ในประวัติศาสต์ทั้งในยุโรปและอเมริกา โรคนี้ทำให้เกิดการเปลี่ยนด้านวิทยาการที่เกี่ยวกับโรคพืชวิทยาขึ้น ในช่วงทศวรรษที่ 1840 เชื้อราสาเหตุโรค *P. infestans* ได้ทำลายมันฝรั่ง ซึ่งเป็นอาหารหลักของชาวไอริช การระบาดของโรคเกิดขึ้นจาก ประชากรเชื้อโรคสายพันธุ์ใหม่ที่มีความรุนแรงเข้้ามาในประเทศ กอปรกับในขณะนั้น สภาพแวดล้อมที่เหมาะสม (สภาพอากาศที่เย็นและเปียกชื้น)ต่อการเกิดโรค และสาพันธุ์ที่ปลูกก็อ่อนแอต่อเชื้อสาเหตุชนิดนี้ จึงทำให้การระบาดแพร่กระจายในประชาการมันฝรั่งในประเทศได้อย่างรวดเร็วที่ยากเกินการควบคุมได้ทัน อย่างไรก็ตาม มีหลายสาเหตุที่คงต้องคลี่คลายต่อไป แต่เร็วนี้พบว่า การแพร่ระบาดที่รุนแรง เกิดจากการแพร่ของเชื้อโรคไปยังภูมิภาคหรือพื้นที่ที่ไม่เคยมีหรือพบมาก่อน (Box 1) หรือ สายพันธุ์ที่ทำให้เกิดการระบาดรุนแรงอาจเกิดขึ้นอันเป็นผลมาจากปัจจัยที่ขับเคลื่อนความหลากหลายทางพันธุกรรมภายในประชากรเชื้อโรคในท้องถิ่น (evolution) กรณีตัวอย่างคือ wheat stem rust สายพันธุ์ Ug99 ซึ่งเป็นภัยคุกคามสำคัญต่อการปลูกข้าวสาลีทั่วโลก มีการพบครั้งแรกในยูกันดาในปี 1998 พบเชื้อรารูปแบบการขยายแบบไม่อาศัยเพศ (asexual lineage) แพร่กระจายผ่านแอฟริกาและตะวันออกกลาง งานวิจัย [@li2019] ชี้ว่า Ug99 เกิดขึ้นจากการผสมข้ามพันธุ์โดยการแลกเปลี่ยนสารพันธุกรรมระหว่าง somatic cell จากเชื้อสายที่แตกต่างกัน เป็นผลให้เกิดการระบาดขึ้นหรือ หรือการอุบัติใหม่อาจได้รับอิทธิพลจากการเปลี่ยนแปลงของรูปแบบภูมิอากาศ ตัวอย่างเช่น Fusarium head blight เกิดจากเชื้อรา *Fusarium graminearum* ทางตอนใต้ของบราซิล ความถี่ของการแพร่ระบาดที่รุนแรงที่เพิ่มขึ้นส่งผลให้ผลผลิตสูญเสียมากขึ้นนับตั้งแต่ต้นทศวรรษ 1990 มีความเชื่อมโยงกับการเปลี่ยนแปลงรูปแบบของฝนตลอดหลายทศวรรษ [@Duffeck2020]
 
 ::: callout-note
-## Box 1: Diseases on the move
-
-In Brazil, the soybean rust pathogen (*Phakopsora pachyrhizi*) first reached southern Brazil in 2002 [@Yorinori2005]. The disease spread to all production regions of the country in the following few years, severely reducing yields. To overcome the problem, farmers have relied on massive applications of fungicides on soybeans, which dramatically increased the production costs with the need for sequential fungicide sprays to combat the disease. Total economic loss have been estimated at around US\$ 2 billion yearly [@godoy2016]. More recently, wheat blast, a disease that originated in the south of Brazil in 1984, and have been restricted to South America, was firstly spotted in South Asia, Bangladesh, in 2016. Blast epidemics in that occasion devastated more than 15,000 ha of wheat and reduced yield of wheat in the affected field up to 100% [@malaker2016; @islam2019b]. The disease was later found in Zambia, thus also becoming a threat to wheat production in Africa [@tembo2020]. In Brazil, the wheat blast disease is a current threat to expansion of wheat cultivation in the tropics[@cruz2017].
+## Box 1: สถานการณ์โรคพืช 
+ในบราซิล เชื้อรา *Phakopsora pachyrhizi* ก่อโรคราสนิมถั่วเหลือง (soybean rust) เข้าถึงบราซิลตอนใต้เป็นครั้งแรกในปี 2002 [@Yorinori2005] โรคนี้แพร่กระจายไปยังพื้นที่ปลูกถั่ว ทั้งประเทศ เพียงไม่กี่ปี ก็ส่งผลให้ผลผลิตถั่วเหลืองลดลงอย่างมาก เพื่อเอาชนะปัญหา เกษตรกรต้องอาศัยการใช้สารเคมีเพื่อกำจัดเชื้อราและโรคนี้จำนวนมาก จึงให้ต้นทุนการผลิตเพิ่มขึ้น การสูญเสียทางเศรษฐกิจทั้งหมดประเมินอยู่ที่ประมาณ 2 พันล้านดอลลาร์สหรัฐต่อปี [@godoy2016] เมื่อเร็วๆ นี้ wheat blight ซึ่งเป็นโรคที่มีต้นกำเนิดอยู่ทางตอนใต้ของบราซิลในปี 1984 และจำกัดอยู่เฉพาะในอเมริกาใต้ ถูกพบครั้งแรกในเอเชียใต้ บังคลาเทศ ในปี พ.ศ. 2016 โรคระบาดในครั้งนั้นทำลายข้าวสาลีไปมากกว่า 15,000 เฮกตาร์ และผลผลิตข้าวสาลีถูกทำลายไปมากสูงสุดถึง 100% [@malaker2016; @islam2019b]. ภายหลังพบโรคนี้ในแซมเบีย (Zambia) ดังนั้นจึงกลายเป็นภัยคุกคามต่อการผลิตข้าวสาลีในแอฟริกา [@tembo2020] ในบราซิล wheat blight เป็นภัยคุกคามต่อการขยายการเพาะปลูกข้าวสาลีในเขตร้อน[@cruz2017]
 :::
 
-## History of Epidemiology
+## ประวัติศาสตร์ของโรคพืชระบาดวิทยา
 
-Botanical epidemiology, or the study of plant disease epidemics, is a discipline with roots tracing back to the early 1960s. However, its origins can be linked to events from centuries and decades prior. For instance, in 1728, Duhamel de Monceau presented the earliest known epidemiological work on a disease, referred to as 'Death,' that afflicted saffron crocus (*Rhizoctonia violacea*). Fast forward to 1858, a textbook detailing plant diseases, written by Julius Kuhn, made its debut, introducing the concept of an epidemic as illustrated by the Irish late blight epidemics of 1845-46. Subsequently, in 1901, H.M. Ward adopted an ecological perspective to the study of plant diseases in his seminal book, Disease in Plants. By 1946, Gäumann penned the first book exclusively devoted to plant disease epidemiology.
+ระบาดวิทยาโรคพืช (Botanical epidemiology) คือ วิชาที่ต้นกำหนดย้อนไป ต้นทศวรรษ 1960 อย่างไรก็ตาม ต้นกำเนิดของมันสามารถเชื่อมโยงกับเหตุการณ์ต่าง ๆ จากหลายศตวรรษและหลายทศวรรษก่อนหน้านี้ได้ ตัวอย่างเช่น ในปี 1728 Duhamel de Monceau นำเสนองานทางระบาดวิทยาที่เก่าแก่ที่สุดที่รู้จักเกี่ยวกับโรคที่เรียกว่า 'Death' ที่สร้างความเสียหายให้กับหญ้า saffron crocus (*Rhizoctonia violacea*) ย้อนไปข้างหน้าจนถึงปี 1858 หนังสือเรียนเกี่ยวกับโรคพืชเขียนโดย Julius Kuhn ได้เสนอแนวคิดการระบาด ครั้งแรก โดยให้ภาพการระบาดตามเหตุการณ์โรคระบาด Irish late blight ปี 1845-46 ต่อมาในปี พ.ศ. 1901 H.M. Ward นำมุมมองทางนิเวศมาใช้ในการศึกษาโรคพืชในหนังสือหลักของเขาเรื่อง โรคในพืช ในปี พ.ศ. 1946 Gäumann ได้เขียนหนังสือเล่มแรกเกี่ยวกับระบาดวิทยาโรคพืชโดยเฉพาะ
 
-Further evolution of this field was marked by the publication of a chapter titled "Analysis of Epidemics" by J.E. Vanderplank in Plant Pathology, vol. 3, edited by Horsfall and Dimond, in 1960. Vanderplank elaborated on his pioneering ideas in his 1963 book, "Plant Diseases: Epidemics and Control"[@plantdi1963]. He is universally recognized as the foundational figure of plant disease epidemiology [@zadoks1988; @thresh1998], his landmark book being the first to comprehensively describe and quantify plant disease epidemics, and offering a theoretical framework for epidemic analysis.
+ต่อมมา การวิวัฒนาการของสาขานี้ได้รับการตีพิมพ์ในบทชื่อ "กAnalysis of Epidemics" โดย **J.E. Vanderplank** ใน วรสาร Plant Pathology, vol. 3, edited by Horsfall and Dimond ในปี 1960 Vanderplank อธิบายแนวคิดบุกเบิก ของเขาอย่างละเอียดในหนังสือปี 1963 เรื่อง "Plant Diseases: Epidemics and Control" [@plantdi1963] เขาได้รับการยอมรับในระดับสากลว่า เป็นบุคคลวางรากฐานของระบาดวิทยาโรคพืช [@zadoks1988; @thresh1998] หนังสือเล่มนี้เป็นเป็นหนังสือเล่มแรกที่อธิบาย และ quantify (ทำให้เป็นปริมาณ) การระบาดโรคพืชอย่างครอบคลุม อีกทั้ง เสนอกรอบทางทฤษฎีสำหรับการวิเคราะห์การระบาดของโรคได้
 
-In the same year, the first International Epidemiology Workshop was convened in Pau, France. This event constitutes an important milestone in the historical narrative, significantly contributing to the molding of this emergent discipline.
+ในปีเดียวกันนั้นเอง มีการประชุมเชิงปฏิบัติการด้านระบาดวิทยานานาชาติครั้งแรกจัดขึ้นที่ Pau ประเทศฝรั่งเศส เหตุการณ์นี้ถือเป็นเหตุการณ์สำคัญในการเล่าเรื่องทางประวัติศาสตร์ ซึ่งมีส่วนสำคัญอย่างยิ่งต่อการหล่อหลอม มาเป็นโรคพืชระบาดวิทยาที่เกิดขึ้นใหม่นี้
 
 ![Group photo of the First International Epidemiology Workshop](imgs/iew1.png){#fig-iew1 style="padding:20px" fig-align="center" width="517"}
 
-The **International Epidemiology Workshop (IEW)** is the principal working group of plant disease epidemiology. This is an organization with a rich history whose members have met approximately every 5 years since 1963. Thus far, [13 meetings](https://iew13.net/about.html) have been organized/planned:
+**International Epidemiology Workshop (IEW)** เป็นคณะทำงานหลักด้านระบาดวิทยาโรคพืช ที่มีประวัติศาสตร์อันยาวนานซึ่งมีสมาชิกมาพบกันทุกๆ 5 ปีนับตั้งแต่ปี 1963 จนถึงขณะนี้ ก็เป็น ครั้งที่ [13 meetings](https://iew13.net/about.html) จะจัดขึ้นเร็ว ๆ นี้:
 
+ที่ผ่านมาจัดมาแล้ว 12  ครั้ง ตามลำดับ
 1963 - Pau, France\
 1971 - Wageningen, The Netherlands\
 1979 - Penn State, United States\
@@ -48,6 +49,7 @@ The **International Epidemiology Workshop (IEW)** is the principal working group
 2013 - Beijing, China\
 2018 - Lillehammer, Norway\
 2024 - Iguassu Falls, Brazil
+
 
 ## Other resources
 
@@ -65,6 +67,6 @@ The **International Epidemiology Workshop (IEW)** is the principal working group
 [Plant Disease Epidemiology - Temporal aspects](https://www.apsnet.org/edcenter/disimpactmngmnt/topc/EpidemiologyTemporal/Pages/default.aspx)\
 [Simulation Modeling in Plant Disease Epidemiology and Crop Loss Analysis](https://www.apsnet.org/edcenter/disimpactmngmnt/topc/BotanicalEpidemiology/Pages/default.aspx)
 
-### Software
+### {R} package 
 
 [Epicrop - Simulation Modeling of Crop Diseases using a SEIR model](http://adamhsparks.github.io/epicrop/)

@@ -1,11 +1,6 @@
 ---
 description-meta: |
-  This book will teach you how to program in R, with hands-on examples. I 
-  wrote it for non-programmers to provide a friendly introduction  to the R
-  language. You'll learn how to load data, assemble and disassemble data 
-  objects, navigate R's environment system, write your own functions, and
-  use all of R's programming tools. Throughout the book, you'll use your
-  newfound skills to solve practical data science problems.
+ หนังสือนี้ โปรแกรมด้วย R โดยมีตัวอย่างที่เน้นการปฏิบัติจริง ถูกเขียนขึ้นสำหรับผู้ที่ไม่มีพื้นฐานเป็นโปรแกรมเมอร์ เพื่อให้เข้าใจภาษา R ได้อย่างเรียบง่าย คุณจะได้เรียนรู้วิธีโหลดข้อมูล ประมวลผลและแยกวัตถุข้อมูล นำทางระบบสภาพแวดล้อมของ R เขียนฟังก์ชันเอง และใช้เครื่องมือการเขียนโปรแกรมทั้งหมดใน R ตลอดทั้งหนังสือ ทักษะที่คุณเรียนรู้จะช่วยในการแก้ปัญหาทางวิทยาศาสตร์ข้อมูลในทางปฏิบัติ
 ---
 
 ## Welcome {.unnumbered}
@@ -15,7 +10,7 @@ This is the website for **"Hands-On Programming with R"**. This book will teach 
 If you are already comfortable with R, and would like to focus instead how to analyze data using R's Tidyverse packages, I recommend [R for Data Science](http://r4ds.had.co.nz/), a book that I co-authored with Hadley Wickham.
 
 ::: {.callout-note appearance="simple"}
-This book was originally created using [bookdown](https://bookdown.org) and published at <https://rstudio-education.github.io/hopr/>. This site is a port of the original book source to the [Quarto](https://quarto.org) publishing system in order to provide an example of it's use.
+หนังสือนี้ส้รางด้วย [Quarto](https://quarto.org) and published at <https://rstudio-education.github.io/hopr/>. 
 :::
 
 ## License
